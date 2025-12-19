@@ -3,7 +3,7 @@
 An animated, interactive, and visually immersive personal portfolio inspired by modern futuristic websites like NeroSpatial.  
 Built using **HTML, CSS, JavaScript, Three.js, and GSAP**, this portfolio showcases my journey, skills, projects, and interests in a cinematic way.
 
-🔗 **Live Website:** https://bhawin.dev  
+🔗 **Live Website:** https://bhawin-haldekar.github.io/Bhawin-s-Portfolio/
 
 ---
 
