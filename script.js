@@ -134,6 +134,18 @@ gsap.from(".footer-name", {
     start: "top 80%"
   }
 });
+gsap.from(".footer-socials a", {
+  y: 30,
+  opacity: 0,
+  stagger: 0.15,
+  duration: 0.8,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".footer",
+    start: "top 80%"
+  }
+});
+
 
 document.querySelectorAll(".magnetic-btn").forEach(btn => {
   btn.addEventListener("click", () => {
@@ -142,4 +154,5 @@ document.querySelectorAll(".magnetic-btn").forEach(btn => {
     document.querySelector(target).scrollIntoView({ behavior: "smooth" });
   });
 });
+
 
