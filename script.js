@@ -155,4 +155,15 @@ document.querySelectorAll(".magnetic-btn").forEach(btn => {
   });
 });
 
+gsap.from(".section-resume", {
+  opacity: 0,
+  y: 60,
+  duration: 1.2,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".section-resume",
+    start: "top 80%"
+  }
+});
+
 
