@@ -187,6 +187,35 @@ body { background:black; color:white; overflow-x:hidden; }
   opacity: 0.6;
 }
 
+.section-resume {
+  text-align: center;
+}
+
+.resume-text {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1.05rem;
+  opacity: 0.85;
+}
+
+.resume-btn {
+  display: inline-block;
+  padding: 16px 34px;
+  background: white;
+  color: black;
+  border-radius: 40px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.resume-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(255,255,255,0.35);
+}
+
+
 
 /* Mobile */
 @media(max-width:768px){
@@ -239,5 +268,6 @@ body::before {
     width: 100%;
   }
 }
+
 
 
