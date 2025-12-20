@@ -134,3 +134,12 @@ gsap.from(".footer-name", {
     start: "top 80%"
   }
 });
+
+document.querySelectorAll(".magnetic-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const target =
+      btn.textContent.includes("Skill") ? "#skills" : "#projects";
+    document.querySelector(target).scrollIntoView({ behavior: "smooth" });
+  });
+});
+
