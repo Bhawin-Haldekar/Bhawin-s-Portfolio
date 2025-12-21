@@ -98,17 +98,17 @@ body { background:black; color:white; overflow-x:hidden; }
 /* Sections */
 .section {
   min-height:100vh;
-  padding:100px 10%;
+  padding:80px 10%;
   text-align:center;
 }
 
 .section-title {
   font-size:3rem;
-  margin-bottom:50px;
+  margin-bottom:40px;
 }
 
 /* Journey */
-.section-journey { margin-top:60vh; }
+.section-journey { margin-top:50vh; }
 .journey-wrapper { position:relative; width:700px; margin:auto; }
 .roadmap-line { width:200px; margin:auto; }
 
@@ -522,6 +522,7 @@ body::before {
   opacity: 0.85;
   margin-top: 20px;
 }
+
 
 
 
