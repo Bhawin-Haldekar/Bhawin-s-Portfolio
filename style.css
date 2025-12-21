@@ -145,6 +145,7 @@ body { background:black; color:white; overflow-x:hidden; }
   transition:transform .4s;
 }
 .project-card:hover { transform:rotateX(10deg) rotateY(-10deg); }
+
 .project-btn {
   padding: 12px 26px;
   background: white;              /* ✅ WHITE BUTTON */
@@ -160,6 +161,7 @@ body { background:black; color:white; overflow-x:hidden; }
   transform: scale(1.08);
   box-shadow: 0 10px 25px rgba(255,255,255,0.35);
 }
+
 
 
 /* Footer */
@@ -282,6 +284,7 @@ body::before {
     width: 100%;
   }
 }
+
 
 
 
