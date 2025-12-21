@@ -176,5 +176,20 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   })
 })
 
+const text = "Bhawin Haldekar";
+const speed = 120; // typing speed (ms)
+let index = 0;
+
+function typeWriter() {
+  if (index < text.length) {
+    document.getElementById("typewriter").textContent += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+window.addEventListener("load", typeWriter);
+
+
 
 
