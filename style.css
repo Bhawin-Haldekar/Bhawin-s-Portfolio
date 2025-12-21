@@ -173,8 +173,29 @@ body { background:black; color:white; overflow-x:hidden; }
   gap: 20px;           /* ⬅ space between buttons */
 }
 
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 30px;
+}
 
+.resume-btn {
+  display: inline-block;
+  padding: 16px 34px;
+  background: white;
+  color: black;
+  border-radius: 40px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
+.resume-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(255,255,255,0.35);
+}
 
 /* Footer */
 .footer { padding:80px 20px; text-align:center; }
@@ -303,6 +324,18 @@ body::before {
     gap: 16px;
   }
 }
+
+@media (max-width: 768px) {
+  .resume-actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .resume-btn {
+    width: 240px;
+  }
+}
+
 
 
 
