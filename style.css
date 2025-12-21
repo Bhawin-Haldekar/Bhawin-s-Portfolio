@@ -162,6 +162,18 @@ body { background:black; color:white; overflow-x:hidden; }
   box-shadow: 0 10px 25px rgba(255,255,255,0.35);
 }
 
+.project-subtitle {
+  opacity: 0.85;
+  margin: 12px 0 28px;  /* ⬅ more space below subtitle */
+}
+
+.project-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;           /* ⬅ space between buttons */
+}
+
+
 
 
 /* Footer */
@@ -284,6 +296,16 @@ body::before {
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .project-actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+
+
 
 
 
