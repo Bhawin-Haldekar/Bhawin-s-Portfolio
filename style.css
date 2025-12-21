@@ -97,8 +97,7 @@ body { background:black; color:white; overflow-x:hidden; }
 
 /* Sections */
 .section {
-  min-height:100vh;
-  padding:60px 10%;
+  padding:40px 10%;
   text-align:center;
 }
 
@@ -108,7 +107,7 @@ body { background:black; color:white; overflow-x:hidden; }
 }
 
 /* Journey */
-.section-journey { margin-top:50vh; }
+.section-journey { margin-top:40vh; }
 .journey-wrapper { position:relative; width:700px; margin:auto; }
 .roadmap-line { width:200px; margin:auto; }
 
@@ -500,7 +499,7 @@ body::before {
 /* About Me Section */
 .about-section {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .about-container {
@@ -523,6 +522,7 @@ body::before {
   opacity: 0.85;
   margin-top: 20px;
 }
+
 
 
 
