@@ -98,17 +98,17 @@ body { background:black; color:white; overflow-x:hidden; }
 /* Sections */
 .section {
   min-height:100vh;
-  padding:140px 10%;
+  padding:100px 10%;
   text-align:center;
 }
 
 .section-title {
   font-size:3rem;
-  margin-bottom:80px;
+  margin-bottom:50px;
 }
 
 /* Journey */
-.section-journey { margin-top:100vh; }
+.section-journey { margin-top:60vh; }
 .journey-wrapper { position:relative; width:700px; margin:auto; }
 .roadmap-line { width:200px; margin:auto; }
 
@@ -135,6 +135,76 @@ body { background:black; color:white; overflow-x:hidden; }
 .skills-orbit span:hover {
   transform:translateY(-8px) scale(1.1);
 }
+
+/* Skills Section */
+.skills-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills-pill {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.skill-box {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 26px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.skill-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-tags span {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.skill-tags span:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+/* Full width box (Languages spoken) */
+.full-width {
+  grid-column: span 2;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+  .full-width {
+    grid-column: span 1;
+  }
+}
+
 
 /* Projects */
 .projects { display:flex; justify-content:center; }
@@ -172,6 +242,97 @@ body { background:black; color:white; overflow-x:hidden; }
   justify-content: center;
   gap: 20px;           /* ⬅ space between buttons */
 }
+
+/* Projects Section */
+.projects-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.projects-pill {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+.project-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.project-subtitle {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  margin-bottom: 14px;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+/* Tech Stack Rectangles */
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.project-tech span {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  cursor: default;
+}
+
+/* Project Buttons */
+.project-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.project-buttons a {
+  padding: 10px 22px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.project-buttons a:hover {
+  transform: translateY(-2px);
+  background: #eaeaea;
+}
+
 
 .resume-actions {
   display: flex;
@@ -335,6 +496,7 @@ body::before {
     width: 240px;
   }
 }
+
 
 
 
