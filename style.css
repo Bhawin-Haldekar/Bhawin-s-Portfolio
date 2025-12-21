@@ -145,6 +145,22 @@ body { background:black; color:white; overflow-x:hidden; }
   transition:transform .4s;
 }
 .project-card:hover { transform:rotateX(10deg) rotateY(-10deg); }
+.project-btn {
+  padding: 12px 26px;
+  background: white;              /* ✅ WHITE BUTTON */
+  color: black;                   /* ✅ BLACK TEXT */
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(255,255,255,0.35);
+}
+
 
 /* Footer */
 .footer { padding:80px 20px; text-align:center; }
@@ -266,6 +282,7 @@ body::before {
     width: 100%;
   }
 }
+
 
 
 
