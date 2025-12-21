@@ -76,9 +76,12 @@ body { background:black; color:white; overflow-x:hidden; }
 .hero-name { font-size:clamp(3.5rem,8vw,6.5rem); font-weight:700; }
 .hero-subtitle { opacity:.85; margin-top:14px; }
 .hero-buttons { margin-top:30px; display:flex; gap:18px; }
-#typewriter::after {
-  margin-left: 6px;
-  animation: blink 1s infinite;
+/* 🔥 HARD STOP TYPEWRITER CURSOR */
+#typewriter::after,
+#typewriter::before {
+  content: none !important;
+  display: none !important;
+  animation: none !important;
 }
 
 @keyframes blink {
@@ -531,6 +534,7 @@ body::before {
   opacity: 0.85;
   margin-top: 20px;
 }
+
 
 
 
