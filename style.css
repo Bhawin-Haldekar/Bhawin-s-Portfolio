@@ -7,11 +7,10 @@ body { background:black; color:white; overflow-x:hidden; }
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -3;          /* ALWAYS BEHIND */
-  background: black;   /* fallback */
+  z-index: -3;          
+  background: black;   
 }
 
-/* Cursor */
 .cursor {
   position: fixed;
   width: 30px;
@@ -23,7 +22,6 @@ body { background:black; color:white; overflow-x:hidden; }
   z-index: 999;
 }
 
-/* Navbar */
 .navbar {
   position: fixed;
   top: 20px;
@@ -63,7 +61,6 @@ body { background:black; color:white; overflow-x:hidden; }
   background: #f2f2f2;
 }
 
-/* Hero */
 .hero {
   height:100vh;
   display:flex;
@@ -105,8 +102,6 @@ body { background:black; color:white; overflow-x:hidden; }
   box-shadow: 0 10px 25px rgba(255,255,255,0.25);
 }
 
-
-/* Sections */
 .section {
   padding:30px 10%;
   text-align:center;
@@ -117,7 +112,6 @@ body { background:black; color:white; overflow-x:hidden; }
   margin-bottom:30px;
 }
 
-/* Journey */
 .section-journey { margin-top:30vh; }
 .journey-wrapper { position:relative; width:700px; margin:auto; }
 .roadmap-line { width:200px; margin:auto; }
@@ -127,7 +121,6 @@ body { background:black; color:white; overflow-x:hidden; }
 .edu-2 { top:300px; right:240px; text-align:right; }
 .edu-3 { top:480px; left:240px; }
 
-/* Skills Orbit */
 .skills-orbit {
   display:flex;
   flex-wrap:wrap;
@@ -146,7 +139,6 @@ body { background:black; color:white; overflow-x:hidden; }
   transform:translateY(-8px) scale(1.1);
 }
 
-/* Skills Section */
 .skills-header {
   text-align: center;
   margin-bottom: 50px;
@@ -203,20 +195,16 @@ body { background:black; color:white; overflow-x:hidden; }
   background: rgba(255,255,255,0.18);
 }
 
-/* Full width box (Languages spoken) */
 .full-width {
   grid-column: span 2;
 }
 
-/* Mobile Fix */
 @media (max-width: 768px) {
   .full-width {
     grid-column: span 1;
   }
 }
 
-
-/* Projects */
 .projects { display:flex; justify-content:center; }
 .project-card {
   padding:40px;
@@ -228,8 +216,8 @@ body { background:black; color:white; overflow-x:hidden; }
 
 .project-btn {
   padding: 12px 26px;
-  background: white;              /* ✅ WHITE BUTTON */
-  color: black;                   /* ✅ BLACK TEXT */
+  background: white;             
+  color: black;                  
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
@@ -244,16 +232,14 @@ body { background:black; color:white; overflow-x:hidden; }
 
 .project-subtitle {
   opacity: 0.85;
-  margin: 12px 0 28px;  /* ⬅ more space below subtitle */
-}
+  margin: 12px 0 28px; 
 
 .project-actions {
   display: flex;
   justify-content: center;
-  gap: 20px;           /* ⬅ space between buttons */
+  gap: 20px;          
 }
 
-/* Projects Section */
 .projects-header {
   text-align: center;
   margin-bottom: 50px;
@@ -305,7 +291,6 @@ body { background:black; color:white; overflow-x:hidden; }
   margin-bottom: 20px;
 }
 
-/* Tech Stack Rectangles */
 .project-tech {
   display: flex;
   flex-wrap: wrap;
@@ -322,7 +307,6 @@ body { background:black; color:white; overflow-x:hidden; }
   cursor: default;
 }
 
-/* Project Buttons */
 .project-buttons {
   display: flex;
   gap: 16px;
@@ -342,7 +326,6 @@ body { background:black; color:white; overflow-x:hidden; }
   transform: translateY(-2px);
   background: #eaeaea;
 }
-
 
 .resume-actions {
   display: flex;
@@ -368,14 +351,13 @@ body { background:black; color:white; overflow-x:hidden; }
   box-shadow: 0 12px 30px rgba(255,255,255,0.35);
 }
 
-/* Footer */
 .footer { padding:80px 20px; text-align:center; }
 .footer-name { font-size:3.5rem; font-weight:700; }
 .footer-socials {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin: 30px 0 40px; /* ⬅ more space below icons */
+  margin: 30px 0 40px; 
 }
 .footer-socials a {
   width: 48px;
@@ -398,7 +380,7 @@ body { background:black; color:white; overflow-x:hidden; }
 }
 
 .footer-contact {
-  margin-top: 20px;   /* ⬅ space above contact text */
+  margin-top: 20px;   
   opacity: 0.85;
 }
 .footer-copy {
@@ -435,9 +417,6 @@ body { background:black; color:white; overflow-x:hidden; }
   box-shadow: 0 12px 30px rgba(255,255,255,0.35);
 }
 
-
-
-/* Mobile */
 @media(max-width:768px){
   .journey-wrapper{width:100%;}
   .edu{position:relative; left:auto; right:auto; text-align:center;}
@@ -507,7 +486,6 @@ body::before {
   }
 }
 
-/* About Me Section */
 .about-section {
   text-align: center;
   padding-bottom: 30px;
@@ -533,6 +511,7 @@ body::before {
   opacity: 0.85;
   margin-top: 20px;
 }
+
 
 
 
