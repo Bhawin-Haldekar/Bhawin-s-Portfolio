@@ -1,6 +1,3 @@
-/*************************************************
- * CURSOR GLOW
- *************************************************/
 const cursor = document.querySelector(".cursor");
 
 window.addEventListener("mousemove", (e) => {
@@ -9,9 +6,6 @@ window.addEventListener("mousemove", (e) => {
 });
 
 
-/*************************************************
- * THREE.JS BACKGROUND (STARS + DEPTH + PARALLAX)
- *************************************************/
 const canvas = document.getElementById("bg");
 const scene = new THREE.Scene();
 
@@ -31,7 +25,6 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-/* ⭐ STAR FIELD */
 const starGeometry = new THREE.BufferGeometry();
 const starCount = 3000;
 const positions = new Float32Array(starCount * 3);
@@ -55,10 +48,8 @@ const starMaterial = new THREE.PointsMaterial({
 const stars = new THREE.Points(starGeometry, starMaterial);
 scene.add(stars);
 
-/* 🌫 DEPTH FOG */
 scene.fog = new THREE.Fog(0x000000, 50, 180);
 
-/* 🌀 MOUSE PARALLAX */
 let mouseX = 0;
 let mouseY = 0;
 
@@ -67,7 +58,6 @@ window.addEventListener("mousemove", (e) => {
   mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
 });
 
-/* 🎞 ANIMATION LOOP */
 function animate() {
   requestAnimationFrame(animate);
 
@@ -81,7 +71,6 @@ function animate() {
 }
 animate();
 
-/* 🔄 RESIZE HANDLER */
 window.addEventListener("resize", () => {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
@@ -89,12 +78,8 @@ window.addEventListener("resize", () => {
 });
 
 
-/*************************************************
- * GSAP SCROLL ANIMATIONS
- *************************************************/
 gsap.registerPlugin(ScrollTrigger);
 
-/* HERO FADE ON SCROLL */
 gsap.to(".hero", {
   opacity: 0,
   scale: 0.95,
@@ -105,7 +90,6 @@ gsap.to(".hero", {
   }
 });
 
-/* JOURNEY PATH DRAW */
 const path = document.getElementById("journeyPath");
 if (path) {
   const length = path.getTotalLength();
@@ -123,7 +107,6 @@ if (path) {
   });
 }
 
-/* FOOTER NAME ANIMATION */
 gsap.from(".footer-name", {
   y: 60,
   opacity: 0,
@@ -177,7 +160,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 })
 
 const text = "Bhawin Haldekar";
-const speed = 120; // typing speed (ms)
+const speed = 120; 
 let index = 0;
 
 function typeWriter() {
@@ -189,6 +172,7 @@ function typeWriter() {
 }
 
 window.addEventListener("load", typeWriter);
+
 
 
 
