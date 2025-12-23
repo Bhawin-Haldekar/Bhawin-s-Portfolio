@@ -233,7 +233,7 @@ body { background:black; color:white; overflow-x:hidden; }
 .project-subtitle {
   opacity: 0.85;
   margin: 12px 0 28px; 
-
+}
 .project-actions {
   display: flex;
   justify-content: center;
@@ -511,23 +511,4 @@ body::before {
   opacity: 0.85;
   margin-top: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
