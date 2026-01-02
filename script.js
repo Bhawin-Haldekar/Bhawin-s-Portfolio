@@ -172,3 +172,27 @@ function typeWriter() {
 }
 
 window.addEventListener("load", typeWriter);
+
+const cursor = document.querySelector(".custom-cursor");
+
+// Move cursor
+window.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+});
+
+// Elements that should trigger hover effect
+const hoverTargets = document.querySelectorAll(
+  "a, button, .project-card"
+);
+
+hoverTargets.forEach(el => {
+  el.addEventListener("mouseenter", () => {
+    cursor.classList.add("hover");
+  });
+
+  el.addEventListener("mouseleave", () => {
+    cursor.classList.remove("hover");
+  });
+});
+
