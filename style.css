@@ -22,8 +22,17 @@ body { background:black; color:white; overflow-x:hidden; }
   pointer-events: none;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 15px rgba(255,255,255,0.6);
-  transition: transform 0.15s ease, width 0.15s ease, height 0.15s ease;
+  transition: 
+    width 0.2s ease,
+    height 0.2s ease,
+    box-shadow 0.2s ease;
   z-index: 9999;
+}
+
+.custom-cursor.hover {
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 0 25px rgba(255,255,255,0.9);
 }
 
 .navbar {
@@ -515,5 +524,15 @@ body::before {
   opacity: 0.85;
   margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+  body {
+    cursor: default;
+  }
+  .custom-cursor {
+    display: none;
+  }
+}
+
 
 
