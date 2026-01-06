@@ -173,10 +173,9 @@ function typeWriter() {
 
 window.addEventListener("load", typeWriter);
 
-// DOB: 20 June 2008
-const dob = new Date(2008, 5, 20, 0, 0, 0, 0);
+const dob = new Date(2008, 6, 20, 0, 0, 0, 0);
 
-function updateAgeLikeVideo() {
+function updateAgeTimer() {
   const now = new Date();
 
   let years = now.getFullYear() - dob.getFullYear();
@@ -185,12 +184,12 @@ function updateAgeLikeVideo() {
 
   if (days < 0) {
     months--;
-    const prevMonthDays = new Date(
+    const previousMonthDays = new Date(
       now.getFullYear(),
       now.getMonth(),
       0
     ).getDate();
-    days += prevMonthDays;
+    days += previousMonthDays;
   }
 
   if (months < 0) {
@@ -201,7 +200,8 @@ function updateAgeLikeVideo() {
   const todayStart = new Date(
     now.getFullYear(),
     now.getMonth(),
-    now.getDate()
+    now.getDate(),
+    0, 0, 0, 0
   );
 
   const diff = now - todayStart;
@@ -220,5 +220,5 @@ function updateAgeLikeVideo() {
   document.getElementById("age-ms").textContent = String(milliseconds).padStart(3, "0");
 }
 
-setInterval(updateAgeLikeVideo, 30);
-updateAgeLikeVideo();
+setInterval(updateAgeTimer, 30);
+updateAgeTimer();
