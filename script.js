@@ -173,7 +173,7 @@ function typeWriter() {
 
 window.addEventListener("load", typeWriter);
 
-const dob = new Date(2008, 6, 20, 0, 0, 0, 0);
+const dob = new Date(2008, 5, 20, 0, 0, 0, 0);
 
 function updateAgeTimer() {
   const now = new Date();
@@ -222,3 +222,4 @@ function updateAgeTimer() {
 
 setInterval(updateAgeTimer, 30);
 updateAgeTimer();
+
