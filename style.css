@@ -534,5 +534,20 @@ body::before {
   }
 }
 
+.age-timer {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  letter-spacing: 0.8px;
+  font-family: "Courier New", monospace;
+}
+@media (max-width: 768px) {
+  .age-timer {
+    font-size: 0.75rem;      
+    letter-spacing: 0.4px;  
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.4;
+  }
 
 
