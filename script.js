@@ -172,3 +172,53 @@ function typeWriter() {
 }
 
 window.addEventListener("load", typeWriter);
+
+// DOB: 20 June 2008
+const dob = new Date(2008, 5, 20, 0, 0, 0, 0);
+
+function updateAgeLikeVideo() {
+  const now = new Date();
+
+  let years = now.getFullYear() - dob.getFullYear();
+  let months = now.getMonth() - dob.getMonth();
+  let days = now.getDate() - dob.getDate();
+
+  if (days < 0) {
+    months--;
+    const prevMonthDays = new Date(
+      now.getFullYear(),
+      now.getMonth(),
+      0
+    ).getDate();
+    days += prevMonthDays;
+  }
+
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
+  const todayStart = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate()
+  );
+
+  const diff = now - todayStart;
+
+  const hours = Math.floor(diff / (1000 * 60 * 60));
+  const minutes = Math.floor((diff / (1000 * 60)) % 60);
+  const seconds = Math.floor((diff / 1000) % 60);
+  const milliseconds = diff % 1000;
+
+  document.getElementById("age-y").textContent = years;
+  document.getElementById("age-mo").textContent = months;
+  document.getElementById("age-d").textContent = days;
+  document.getElementById("age-h").textContent = String(hours).padStart(2, "0");
+  document.getElementById("age-mi").textContent = String(minutes).padStart(2, "0");
+  document.getElementById("age-s").textContent = String(seconds).padStart(2, "0");
+  document.getElementById("age-ms").textContent = String(milliseconds).padStart(3, "0");
+}
+
+setInterval(updateAgeLikeVideo, 30);
+updateAgeLikeVideo();
